@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    padding: 0 20px;
+}
+
+.webName {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    margin: 1rem;
+}
+
+.menuToggle {
+    display: none;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+
+.menuItem {
+    margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.menuItem:hover {
+    text-decoration: underline;
+}
+
+.resumeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 50px;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #0070f3;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resumeButton:hover {
+    background: rgba(0, 118, 255, 0.9);
+    box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
