@@ -2,24 +2,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    background-color: #333;
-    color: white;
+    height: 60px; 
     padding: 0 20px;
 }
 
 .webName {
+    flex: 1;
     font-size: 1.5rem;
     font-weight: bold;
+    color: #64b7ff;
 }
 
 .socials {
     display: flex;
-    justify-content: space-evenly;
+    flex: 1;
+    justify-content: center;
 }
 
 .logo {
-    margin: 1rem;
+    display: inline-block;
+    margin: 0 25px;
 }
 
 .menuToggle {
@@ -36,6 +38,7 @@
 
 .menu {
     display: flex;
+    flex: 1;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
@@ -67,9 +70,9 @@
     width: 45px;
     line-height: 45px;
     border-radius: 7px;
-    background-color: #0070f3;
+    background-color: #64b7ff;
     color: white;
-    font-weight: 400;
+    font-weight: 400;  
     font-size: 16px;
     box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
