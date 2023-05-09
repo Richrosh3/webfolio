@@ -1,34 +1,38 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from './Layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
-import NavBar from '@/components/NavBar'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./Layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
+import NavBar from "@/components/NavBar";
 
-const name = 'Roshen Abraham';
+const name = "Roshen Abraham";
 export const siteTitle = "Roshen's Webfolio";
 
-export default function Layout ({children, home}: {children: any; home: any}){
+export default function Layout({
+  children,
+  home,
+}: {
+  children: any;
+  home: any;
+}) {
   return (
-    <div className={styles.container}>
-      <NavBar/>
+    // <div className={styles.container}>
+    <div className= "justify-between items-center bg-gradient-to-b from-slate-600 to-slate-900 p-10 w-screen h-screen">
+      <NavBar />
       <Head>
         <link rel="icon" href="terminal.ico" />
-        <meta
-          name="Roshen Abraham"
-          content="My Webfolio!"
-        />
+        <meta name="Roshen Abraham" content="My Webfolio!" />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
+            siteTitle
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
+        {/* {home ? (
           <>
             <Image
               priority
@@ -38,7 +42,6 @@ export default function Layout ({children, home}: {children: any; home: any}){
               width={144}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
@@ -58,7 +61,7 @@ export default function Layout ({children, home}: {children: any; home: any}){
               </Link>
             </h2>
           </>
-        )}
+        )} */}
       </header>
       <main>{children}</main>
       {!home && (
