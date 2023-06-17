@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "./Layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
 
@@ -16,7 +14,6 @@ export default function Layout({
   home: any;
 }) {
   return (
-    // <div className={styles.container}>
     <div className= "justify-between items-center bg-gradient-to-b from-slate-600 to-slate-900 p-10 w-screen h-screen">
       <NavBar />
       <Head>
@@ -31,38 +28,6 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
-        {/* {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt=""
-            />
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
-                alt=""
-              />
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {name}
-              </Link>
-            </h2>
-          </>
-        )} */}
-      </header>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
