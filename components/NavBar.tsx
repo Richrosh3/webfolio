@@ -12,14 +12,14 @@ const NavBar = () => {
   };
 
   return (
-    <nav className={styles.container}>
+    <nav className="flex justify-between items-center border-red-300 border-solid border-4">
       <Link
-        className="flex-1 text-2xl font-bold bg-gradient-to-r from-emerald-200 to-blue-400 bg-clip-text text-transparent "
+        className="flex-none text-2xl font-bold bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent "
         href="/"
       >
         Roshen's Webfolio
       </Link>
-      <div className={styles.socials}>
+      <div className= "flex-none">
         <Link href="https://github.com/Richrosh3">
           <RxGithubLogo className={styles.logo} size={35} />
         </Link>
@@ -29,7 +29,7 @@ const NavBar = () => {
       </div>
       <ul className={styles.menu}>
         <li className={styles.menuItem}>
-          <Link className = "text-emerald-200" href="/content/about">About</Link>
+          <Link className = "text-emerald-200 " href="/content/about">About</Link>
         </li>
         <li className={styles.menuItem}>
           <Link className = "text-emerald-500" href="/content/projects">Projects</Link>
