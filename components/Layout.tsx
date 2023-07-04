@@ -14,7 +14,7 @@ export default function Layout({
   home: any;
 }) {
   return (
-    <div className= "justify-between items-center bg-gradient-to-b from-slate-600 to-slate-900 p-10 w-screen h-screen">
+    <div className= "flex flex-col h-screen bg-gradient-to-b from-slate-600 to-slate-900 p-10">
       <NavBar />
       <Head>
         <link rel="icon" href="terminal.ico" />
